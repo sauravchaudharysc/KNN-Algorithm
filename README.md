@@ -22,6 +22,13 @@ It is a non-parametric algorithm . Learning is zero , we aren't going to learn a
 
 ### What is Euclidean Distance ??
 
+```
+#Euclidean Distance 
+#Compute the distance
+def dist(x1,x2):
+    return np.sqrt(sum((x1-x2)**2))
+```
+
 ![Data Points](./1.jpg)
 
 To Check Implementation of KNN Algorithm. Check Out KNN Algorithm.ipynb
