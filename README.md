@@ -6,11 +6,11 @@ It is a supervised learning algorithm. So we store all the data-points and label
 
 So **KNN** helps here. 
 
-![Data Points](.\3.jpg)
+![Data Points](./3.jpg)
 
 ### How it helps ?
 
-![Data Points](.\2.jpg)
+![Data Points](./2.jpg)
 
 We choose the K. Generally 5 is choosed. Increasing K will increase the efficiency but slow down. We take the majority vote . There is no training required . All the work happens at query time. So training time is O(1). 
 
@@ -22,6 +22,6 @@ It is a non-parametric algorithm . Learning is zero , we aren't going to learn a
 
 ### What is Euclidean Distance ??
 
-![Data Points](.\1.jpg)
+![Data Points](./1.jpg)
 
 To Check Implementation of KNN Algorithm. Check Out KNN Algorithm.ipynb
