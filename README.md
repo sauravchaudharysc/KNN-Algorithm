@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+# K Nearest Neighbors
 
-You can use the [editor on GitHub](https://github.com/sauravchaudharysc/KNN-Algorithm/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+KNN works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query, then votes for the most frequent label (in the case of **classification**) or averages the labels (in the case of regression).It is used for both classification and regression.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+It is a supervised learning algorithm. So we store all the data-points and labels. Suppose we have two class with data-points and labels. Suppose we get a new point and we want to predict to which category to it belongs. 
 
-### Markdown
+So **KNN** helps here. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![Data Points](.\3.jpg)
 
-```markdown
-Syntax highlighted code block
+### How it helps ?
 
-# Header 1
-## Header 2
-### Header 3
+![Data Points](.\2.jpg)
 
-- Bulleted
-- List
+We choose the K. Generally 5 is choosed. Increasing K will increase the efficiency but slow down. We take the majority vote . There is no training required . All the work happens at query time. So training time is O(1). 
 
-1. Numbered
-2. List
+We calculate distance of current points from all other points. So suppose there are n points. So we will sort it and compare then it take O(nlogn) .
 
-**Bold** and _Italic_ and `Code` text
+It is a non-parametric algorithm . Learning is zero , we aren't going to learn any parameter. 
 
-[Link](url) and ![Image](src)
-```
+**It is used as a Baseline Algorithm for other Algorithm. Any algorithm we are going to use should have better accuracy then KNN Algorithm.**
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### What is Euclidean Distance ??
 
-### Jekyll Themes
+![Data Points](.\1.jpg)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sauravchaudharysc/KNN-Algorithm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+To Check Implementation of KNN Algorithm. Check Out KNN Algorithm.ipynb
